@@ -101,7 +101,7 @@ class Cart extends Component {
               <div className="d-flex flex-column" style={{ width: "100%" }}>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Your Discount Code"
                 />
                 <button className="btn btn-primary btn-block mt-3">
