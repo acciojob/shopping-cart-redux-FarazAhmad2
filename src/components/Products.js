@@ -12,8 +12,8 @@ class Products extends Component {
                 <p className="text-muted">All Products that available to order</p>
                 <div className="row mt-3">
                     {
-                        products.length > 0 ? products.map(product => (
-                            <div className="col-md-3">
+                        products.length > 0 ? products.map((product,idx) => (
+                            <div key={idx} className="col-md-3">
                                 <CardProduct key={product.id} product={product} addToCart={addToCart} />
                             </div>
                         )) : <p className="text-center mx-auto">No Product Available</p>

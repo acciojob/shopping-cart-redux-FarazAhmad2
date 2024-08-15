@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Cart from "./Cart"
-import Products from "./Products";
 import Wishlist from "./Wishlist";
 import Footer from "./Footer";
+import Products from "./Products";
 
 function App() {
   return (
