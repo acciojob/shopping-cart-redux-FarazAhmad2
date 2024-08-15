@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "@mui/material";
-import DeleteIcon from "@mui/icons-material/Delete";
-import Favorite from "@mui/icons-material/Favorite";
+import Button from "@material-ui/core/Button";
+import DeleteIcon from "@material-ui/icons/Delete";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 const CartItem = ({
   cartItem,
@@ -40,7 +40,7 @@ const CartItem = ({
                 className="ml-2"
                 variant="text"
                 style={{ color: "grey" }}
-                startIcon={<Favorite />}
+                startIcon={<FavoriteIcon />}
                 onClick={() => addWishlist(cartItem)}
               >
                 MOVE TO WISHLIST
@@ -49,10 +49,10 @@ const CartItem = ({
           </div>
         </div>
         <div className="col-md-3">
-          <div className="input-group mt-3 mb-5">
-            <div className="input-group-prepend">
+          <div class="input-group mt-3 mb-5">
+            <div class="input-group-prepend">
               <button
-                className="btn btn-outline-secondary font-weight-bold"
+                class="btn btn-outline-secondary font-weight-bold"
                 disabled={cartItem.product_qty === 1}
                 onClick={() => removeItemQty(cartItem)}
               >
@@ -63,14 +63,14 @@ const CartItem = ({
             <input
               type="text"
               readOnly
-              className="form-control text-center"
+              class="form-control text-center"
               value={cartItem.product_qty}
               aria-label="Example text with button addon"
               aria-describedby="button-addon1"
             />
-            <div className="input-group-append">
+            <div class="input-group-append">
               <button
-                className="btn btn-outline-secondary font-weight-bold"
+                class="btn btn-outline-secondary font-weight-bold"
                 onClick={() => addItemQty(cartItem)}
               >
                 +
